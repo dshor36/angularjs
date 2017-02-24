@@ -26,5 +26,12 @@ namespace WebApplication1.Controllers
 
             return View();
         }
+
+        public ActionResult AngualrJSTestPage()
+        {
+            ViewBag.Message = "Angualr JS Test Page Using Code School Course Level 1.";
+
+            return View();
+        }
     }
 }
