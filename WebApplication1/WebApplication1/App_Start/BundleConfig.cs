@@ -21,9 +21,13 @@ namespace WebApplication1
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js",
-                      "~/Scripts/respond.js",
-                      "~/Scripts/angular.min.js",
-                      "~/Scripts/app.js"));
+                      "~/Scripts/respond.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/angularJS").Include(
+                        "~/Scripts/app/angular.min.js",
+                        "~/Scripts/app/app.module.js",
+                        "~/Scripts/app/phone-list/phone-list.module.js",
+                        "~/Scripts/app/phone-list/phone-list.component.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",

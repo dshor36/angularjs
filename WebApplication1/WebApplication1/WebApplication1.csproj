@@ -196,6 +196,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\TemplatesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
@@ -295,9 +296,12 @@
     <Content Include="Img\phones\t-mobile-mytouch-4g.5.jpg" />
     <Content Include="Scripts\ai.0.22.9-build00167.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
-    <Content Include="Scripts\angular.min.js" />
-    <Content Include="Scripts\app.spec.js" />
-    <Content Include="Scripts\app.js" />
+    <Content Include="Scripts\app\angular.min.js" />
+    <Content Include="Scripts\app\phone-list\phone-list.module.js" />
+    <Content Include="Scripts\app\phone-list\phone-list.component.spec.js" />
+    <Content Include="Scripts\app\phone-list\phone-list.component.js" />
+    <Content Include="Scripts\app\app.spec.js" />
+    <Content Include="Scripts\app\app.module.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
@@ -371,9 +375,11 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Home\AngualrJSTestPage.cshtml" />
+    <Content Include="Views\Templates\PhoneListTemplate.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Home\Shared\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
