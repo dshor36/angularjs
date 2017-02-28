@@ -209,6 +209,8 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\app.animations.css" />
+    <Content Include="Content\app.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
@@ -296,7 +298,12 @@
     <Content Include="Img\phones\t-mobile-mytouch-4g.5.jpg" />
     <Content Include="Scripts\ai.0.22.9-build00167.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
+    <Content Include="Scripts\app\angular-mocks.js" />
+    <Content Include="Scripts\app\angular-route.js" />
     <Content Include="Scripts\app\angular.min.js" />
+    <Content Include="Scripts\app\app.config.js" />
+    <Content Include="Scripts\app\phone-detail\phone-detail.module.js" />
+    <Content Include="Scripts\app\phone-detail\phone-detail.component.js" />
     <Content Include="Scripts\app\phone-list\phone-list.module.js" />
     <Content Include="Scripts\app\phone-list\phone-list.component.spec.js" />
     <Content Include="Scripts\app\phone-list\phone-list.component.js" />
@@ -376,6 +383,7 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Home\AngualrJSTestPage.cshtml" />
     <Content Include="Views\Templates\PhoneListTemplate.cshtml" />
+    <Content Include="Views\Templates\PhoneDetailTemplate.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

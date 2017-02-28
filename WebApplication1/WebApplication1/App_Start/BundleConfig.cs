@@ -25,13 +25,20 @@ namespace WebApplication1
 
             bundles.Add(new ScriptBundle("~/bundles/angularJS").Include(
                         "~/Scripts/app/angular.min.js",
+                        "~/Scripts/app/angular-route.js",
+                        "~/Scripts/app/angular-mocks.js",
                         "~/Scripts/app/app.module.js",
+                        "~/Scripts/app/app.config.js",
                         "~/Scripts/app/phone-list/phone-list.module.js",
-                        "~/Scripts/app/phone-list/phone-list.component.js"));
+                        "~/Scripts/app/phone-list/phone-list.component.js",
+                        "~/Scripts/app/phone-detail/phone-detail.module.js",
+                        "~/Scripts/app/phone-detail/phone-detail.component.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
+            //,           "~/Content/app.css"));
+            //,            "~/Content/app.animations.css"
         }
     }
 }
