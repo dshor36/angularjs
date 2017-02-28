@@ -161,3 +161,4 @@ C:\GIT\angularjs\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.Twi
 C:\GIT\angularjs\WebApplication1\WebApplication1\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\GIT\angularjs\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
 C:\GIT\angularjs\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
+C:\GIT\angularjs\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache

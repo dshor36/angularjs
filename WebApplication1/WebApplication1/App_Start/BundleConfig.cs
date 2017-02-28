@@ -24,21 +24,29 @@ namespace WebApplication1
                       "~/Scripts/respond.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/angularJS").Include(
-                        "~/Scripts/app/angular.min.js",
+                        //"~/Scripts/app/angular.min.js",
+                        "~/Scripts/app/angular.js",
                         "~/Scripts/app/angular-route.js",
+                        "~/Scripts/app/angular-resource.js",
+                        "~/Scripts/app/angular-animate.js",
                         "~/Scripts/app/angular-mocks.js",
                         "~/Scripts/app/app.module.js",
                         "~/Scripts/app/app.config.js",
+                        "~/Scripts/app/app.animations.js",
                         "~/Scripts/app/phone-list/phone-list.module.js",
                         "~/Scripts/app/phone-list/phone-list.component.js",
                         "~/Scripts/app/phone-detail/phone-detail.module.js",
-                        "~/Scripts/app/phone-detail/phone-detail.component.js"));
+                        "~/Scripts/app/phone-detail/phone-detail.component.js",
+                        "~/Scripts/app/core/core.module.js",
+                        "~/Scripts/app/core/checkmark/checkmark.filter.js",
+                        "~/Scripts/app/core/phone/phone.module.js",
+                        "~/Scripts/app/core/phone/phone.service.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
-            //,           "~/Content/app.css"));
-            //,            "~/Content/app.animations.css"
+                      "~/Content/site.css",
+                      "~/Content/app.css",
+                      "~/Content/app.animations.css"));
         }
     }
 }

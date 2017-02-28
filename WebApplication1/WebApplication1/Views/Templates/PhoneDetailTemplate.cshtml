@@ -1,6 +1,12 @@
-﻿
+﻿@{
+    Layout = null;
+}
 
-<img ng-src="{{$ctrl.phone.images[0]}}" class="phone" />
+<div class="phone-images">
+    <img ng-src="{{img}}" class="phone"
+         ng-class="{selected: img === $ctrl.mainImageUrl}"
+         ng-repeat="img in $ctrl.phone.images" />
+</div>
 
 <h1>{{$ctrl.phone.name}}</h1>
 
@@ -8,7 +14,7 @@
 
 <ul class="phone-thumbs">
     <li ng-repeat="img in $ctrl.phone.images">
-        <img ng-src="{{img}}" />
+        <img ng-src="{{img}}" ng-click="$ctrl.setImage(img)" />
     </li>
 </ul>
 
@@ -20,9 +26,18 @@
             <dd ng-repeat="availability in $ctrl.phone.availability">{{availability}}</dd>
         </dl>
     </li>
-    ...
+
     <li>
         <span>Additional Features</span>
         <dd>{{$ctrl.phone.additionalFeatures}}</dd>
+    </li>
+
+    <li>
+        <dl>
+            <dt>Infrared</dt>
+            <dd>{{$ctrl.phone.connectivity.infrared | checkmark}}</dd>
+            <dt>GPS</dt>
+            <dd>{{$ctrl.phone.connectivity.gps | checkmark}}</dd>
+        </dl>
     </li>
 </ul>

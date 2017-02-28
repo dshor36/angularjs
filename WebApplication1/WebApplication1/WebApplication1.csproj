@@ -298,10 +298,18 @@
     <Content Include="Img\phones\t-mobile-mytouch-4g.5.jpg" />
     <Content Include="Scripts\ai.0.22.9-build00167.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
+    <Content Include="Scripts\app\angular-animate.js" />
     <Content Include="Scripts\app\angular-mocks.js" />
+    <Content Include="Scripts\app\angular-resource.js" />
     <Content Include="Scripts\app\angular-route.js" />
+    <Content Include="Scripts\app\angular.js" />
     <Content Include="Scripts\app\angular.min.js" />
+    <Content Include="Scripts\app\app.animations.js" />
     <Content Include="Scripts\app\app.config.js" />
+    <Content Include="Scripts\app\core\core.module.js" />
+    <Content Include="Scripts\app\core\checkmark\checkmark.filter.js" />
+    <Content Include="Scripts\app\core\phone\phone.service.js" />
+    <Content Include="Scripts\app\core\phone\phone.module.js" />
     <Content Include="Scripts\app\phone-detail\phone-detail.module.js" />
     <Content Include="Scripts\app\phone-detail\phone-detail.component.js" />
     <Content Include="Scripts\app\phone-list\phone-list.module.js" />
@@ -335,10 +343,10 @@
     <Content Include="Content\Json\sanyo-zio.json" />
     <Content Include="Content\Json\t-mobile-g2.json" />
     <Content Include="Content\Json\t-mobile-mytouch-4g.json" />
-    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="Scripts\jquery-1.10.2.js" />
-    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\jquery-3.1.1.min.map" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery-3.1.1.js" />
+    <Content Include="Scripts\jquery-3.1.1.min.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
@@ -387,7 +395,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Home\Shared\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -395,7 +402,6 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
-    <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
