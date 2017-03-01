@@ -31,7 +31,7 @@ namespace WebApplication1.Controllers
         {
             ViewBag.Message = "Angualr JS Test Page Using Code School Course Level 1.";
 
-            return View();
+            return new AngularTemplatesController().Inline();
         }
     }
 }

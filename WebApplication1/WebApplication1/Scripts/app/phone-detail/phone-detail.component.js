@@ -1,17 +1,18 @@
 angular.
   module('phoneDetail').
   component('phoneDetail', {
-      templateUrl: '/Templates/PhoneDetailTemplate',
-      controller: ['$routeParams', 'Phone',
-        function PhoneDetailController($routeParams, Phone) {
+      controller: ['$http', '$routeParams',
+        function PhoneDetailController($http, $routeParams) {
             var self = this;
-            self.phone = Phone.get({ phoneId: $routeParams.phoneId }, function (phone) {
-                self.setImage(phone.images[0]);
-            });
 
-            self.setImage = function setImage(imageUrl) {
-                self.mainImageUrl = imageUrl;
-            };
+            if ($routeParams.phoneId == null)
+            {
+                $routeParams.phoneId = "dell-streak-7";
+            }
+
+            $http.get('/Content/Json/' + $routeParams.phoneId + '.json').then(function (response) {
+                self.phone = response.data;
+            });
         }
       ]
   });

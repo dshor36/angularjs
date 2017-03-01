@@ -19,6 +19,7 @@ namespace WebApplication1
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
 
+            routes.MapRoute("AngularTemplates", "Templates/{name}", new { controller = "AngularTemplates", action = "Template" });
         }
     }
 }
