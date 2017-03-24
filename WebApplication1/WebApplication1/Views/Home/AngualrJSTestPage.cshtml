@@ -4,11 +4,16 @@
     ViewBag.Title = "Angualr JS Test Page";
 }
 
-<div class="view-container">
+@*<div class="view-container">
     <div ng-view class="view-frame">
         @foreach (string templateName in Model)
         {
             @Html.Partial("~/Views/Templates/" + templateName + ".cshtml")
         }
+    </div>
+</div>*@
+
+<div class="view-container">
+    <div ng-view class="view-frame">
     </div>
 </div>

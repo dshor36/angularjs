@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 using System.Web;
 using System.Web.Mvc;
 
@@ -31,7 +32,20 @@ namespace WebApplication1.Controllers
         {
             ViewBag.Message = "Angualr JS Test Page Using Code School Course Level 1.";
 
-            return new AngularTemplatesController().Inline();
+            string name = "PhoneListTemplate";
+            string[] uriSegments = Request.Url.Segments;
+            string [] test = Request.QueryString.AllKeys;
+            if (uriSegments[uriSegments.Length - 1] != "/phones/*") 
+            {
+                name = "PhoneDetailTemplate";
+            }
+
+            if (name == null || !Regex.IsMatch(name, @"^[-\w]+$"))
+            throw new ArgumentException("Illegal template name", "name");
+
+            string relativeViewPath = string.Format("~/Views/Templates/{0}.cshtml", name);
+
+            return View(relativeViewPath);
         }
     }
 }
